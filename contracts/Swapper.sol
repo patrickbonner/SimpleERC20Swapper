@@ -1,9 +1,5 @@
-/**
- *Submitted for verification at Etherscan.io on 2024-06-21
-*/
-
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.24;
 
 interface ERC20Swapper {
     /// @dev swaps the `msg.value` Ether to at least `minAmount` of tokens in `address`, or reverts
