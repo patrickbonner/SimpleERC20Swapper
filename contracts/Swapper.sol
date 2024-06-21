@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity ^0.8.0;
 
 interface ERC20Swapper {
     /// @dev swaps the `msg.value` Ether to at least `minAmount` of tokens in `address`, or reverts
@@ -32,7 +32,7 @@ contract SimpleERC20Swapper is ERC20Swapper {
         _;
     }
 
-    constructor(address _uniswapRouter) {
+    function initialize(address _uniswapRouter) external {
         owner = msg.sender;
         uniswapRouter = IUniswapV2Router(_uniswapRouter);
     }
